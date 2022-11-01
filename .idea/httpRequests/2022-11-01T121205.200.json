@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Manali Patel",
+    "email": "manali1234@gmail.com",
+    "monthlysal": 5000.0,
+    "monthlyexp": 1000.0
+  },
+  {
+    "id": 2,
+    "name": "Niraj Patel",
+    "email": "niraj1234@gmail.com",
+    "monthlysal": 5000.0,
+    "monthlyexp": 4500.0
+  },
+  {
+    "id": 3,
+    "name": "Niraj Patel",
+    "email": "niraj123@gmail.com",
+    "monthlysal": 5000.0,
+    "monthlyexp": 2000.0
+  },
+  {
+    "id": 6,
+    "name": "Parimal Patel",
+    "email": "pari1@gmail.com",
+    "monthlysal": 6000.5,
+    "monthlyexp": 4000.0
+  },
+  {
+    "id": 7,
+    "name": "Parimal Patel",
+    "email": "pari12@gmail.com",
+    "monthlysal": 6000.5,
+    "monthlyexp": 4000.0
+  }
+]

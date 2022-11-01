@@ -1,0 +1,16 @@
+com.altimetrik.candidate.testapi
+com.altimetrik.candidate.testapi.accountControllerTests
+com.altimetrik.candidate.testapi.accountRepositoryTests
+com.altimetrik.candidate.testapi.accountServiceTests
+com.altimetrik.candidate.testapi.accountcontroller
+com.altimetrik.candidate.testapi.accountentity
+com.altimetrik.candidate.testapi.accountrepository
+com.altimetrik.candidate.testapi.accountservice
+com.altimetrik.candidate.testapi.controller
+com.altimetrik.candidate.testapi.controllerTest
+com.altimetrik.candidate.testapi.entity
+com.altimetrik.candidate.testapi.exception
+com.altimetrik.candidate.testapi.integrated
+com.altimetrik.candidate.testapi.repository
+com.altimetrik.candidate.testapi.service
+com.altimetrik.candidate.testapi.userServiceImplTest

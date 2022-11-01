@@ -1,0 +1,14 @@
+version: 1.0
+configuration:
+  has_webserver: false
+  #  scoring:
+  #    command: "./gradlew clean test"
+  #    files:
+  #      - "build/test-results/test/TEST- com.altimetrik.candidate.testapi.UserApiApplicationTests.xml"
+  ide_config:
+    default_open_files:
+      - src/main/java/com/altimetrik/candidate/testapi/UserApiApplication.java
+    project_menu:
+      run: "./gradlew bootRun"
+      install: "./gradlew installDist"
+      test: "./gradlew clean test"

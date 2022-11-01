@@ -1,0 +1,18 @@
+GET http://localhost:8080/api/v1/
+
+<> 2022-11-01T121205.200.json
+
+###
+
+GET http://localhost:8080/api/v1/email/niraj1234@gmail.com
+
+<> f.txt
+
+###
+
+GET http://localhost:8080/api/v1/
+
+<> 2022-10-31T130319.200.json
+
+###
+

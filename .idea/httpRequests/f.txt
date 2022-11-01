@@ -1,0 +1,7 @@
+{
+  "id": 2,
+  "name": "Niraj Patel",
+  "email": "niraj1234@gmail.com",
+  "monthlysal": 5000.0,
+  "monthlyexp": 4500.0
+}
