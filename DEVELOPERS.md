@@ -38,4 +38,3 @@ The API is connected with MYSQL Database. By default, Spring provides apache tom
 The DB URL, USERNAME and PASSWORD needs to be configured with the correct url, username and password before using the API on any local machine in the
 	"application.properties" file in the "resources" folder. Also create the Database in MYSQL, the tables and DB fields will be 
 	auto created when the API is started.
-While unit testing (ONLY), the user controller layer you will have to comment account controller as 2 controllers cannot be tested as they are different controllers and vice versa.

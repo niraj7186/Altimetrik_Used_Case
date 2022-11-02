@@ -4,7 +4,6 @@ import com.altimetrik.candidate.testapi.accountentity.accountEntity;
 import com.altimetrik.candidate.testapi.accountentity.accountModel;
 import com.altimetrik.candidate.testapi.accountrepository.accountRepository;
 import com.altimetrik.candidate.testapi.entity.userEntity;
-import com.altimetrik.candidate.testapi.exception.userException;
 import com.altimetrik.candidate.testapi.repository.userRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.hamcrest.CoreMatchers;
@@ -21,13 +20,16 @@ import org.springframework.test.web.servlet.ResultActions;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultHandlers;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
-import org.testcontainers.junit.jupiter.Testcontainers;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.mockito.BDDMockito.given;
 
+
+
+/**
+ * JUnit Test for Controller Integration Test
+ */
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 @AutoConfigureMockMvc
 public class userControllerIT {

@@ -23,6 +23,9 @@ import org.testcontainers.junit.jupiter.Testcontainers;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * JUnit Test for Integration Test using TestContainers with MySQL Module
+ */
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 @AutoConfigureMockMvc
 @Testcontainers

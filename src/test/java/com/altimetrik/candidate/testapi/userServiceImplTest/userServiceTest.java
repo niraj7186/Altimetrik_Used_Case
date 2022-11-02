@@ -25,7 +25,7 @@ import com.altimetrik.candidate.testapi.repository.userRepository;
 import com.altimetrik.candidate.testapi.service.userServiceImpl;
 
 /**
- * JUnit Test for User Service Layer.
+ * JUnit Test for User Service Layer using MOCKITO and ASSERTJ.
  */
 @ExtendWith(MockitoExtension.class)
 public class userServiceTest {

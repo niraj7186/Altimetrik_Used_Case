@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Optional;
 
 /**
- * JUnit Test for User Repository Layer.
+ * JUnit Test for User Repository Layer using DataJPA.
  */
 @DataJpaTest
 public class userRepositoryTest {

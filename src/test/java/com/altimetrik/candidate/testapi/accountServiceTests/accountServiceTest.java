@@ -16,7 +16,6 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.beans.BeanUtils;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
@@ -24,7 +23,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.BDDMockito.given;
 
 /**
- * JUnit Test in Account Service Layer.
+ * JUnit Test in Account Service Layer using MOCKITO and ASSERTJ.
  */
 @ExtendWith(MockitoExtension.class)
 public class accountServiceTest {
@@ -64,6 +63,7 @@ public class accountServiceTest {
 
 		given(uRepo.findByEmail(user.getEmail())).willReturn(Optional.of(user));
 		BeanUtils.copyProperties(accModel,acc);
+		acc.setId(1L);
 		given(accRepo.save(acc)).willReturn(acc);
 
 		accountEntity saveUser = null;

@@ -4,6 +4,7 @@ import com.altimetrik.candidate.testapi.accountentity.accountEntity;
 import com.altimetrik.candidate.testapi.accountentity.accountModel;
 import com.altimetrik.candidate.testapi.accountservice.accountService;
 import com.altimetrik.candidate.testapi.exception.userException;
+import com.altimetrik.candidate.testapi.service.userService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.hamcrest.CoreMatchers;
 import org.junit.jupiter.api.BeforeEach;
@@ -35,6 +36,9 @@ public class accountControllerTest {
 	
 	@MockBean
 	private accountService accSer;
+
+	@MockBean
+	private userService uService;
 
 	@Autowired
 	private ObjectMapper objMapper;

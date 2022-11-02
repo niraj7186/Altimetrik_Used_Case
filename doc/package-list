@@ -2,7 +2,6 @@ com.altimetrik.candidate.testapi
 com.altimetrik.candidate.testapi.accountControllerTests
 com.altimetrik.candidate.testapi.accountRepositoryTests
 com.altimetrik.candidate.testapi.accountServiceTests
-com.altimetrik.candidate.testapi.accountcontroller
 com.altimetrik.candidate.testapi.accountentity
 com.altimetrik.candidate.testapi.accountrepository
 com.altimetrik.candidate.testapi.accountservice

@@ -6,6 +6,7 @@ import static org.mockito.BDDMockito.willDoNothing;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.altimetrik.candidate.testapi.accountservice.accountService;
 import org.hamcrest.CoreMatchers;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -35,6 +36,9 @@ public class userControllerTest {
 	
 	@MockBean
 	private userService uService;
+
+	@MockBean
+	private accountService accService;
 
 	@Autowired
 	private ObjectMapper objMapper;
