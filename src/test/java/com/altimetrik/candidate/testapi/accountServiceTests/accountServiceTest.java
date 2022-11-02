@@ -21,6 +21,8 @@ import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.BDDMockito.given;
+import static org.mockito.Mockito.never;
+import static org.mockito.Mockito.verify;
 
 /**
  * JUnit Test in Account Service Layer using MOCKITO and ASSERTJ.
@@ -75,6 +77,29 @@ public class accountServiceTest {
 
 		assertThat(saveUser).isNotNull();
 	}
+
+	/**
+	 * JUnit Test to save account details in Account Service Layer - Negative Scenario
+	 */
+	@Test
+	public void saveAccount_WithException_basic()
+	{
+		accountEntity acc = accountEntity.builder().build();
+		accountEntity accdummy = accountEntity.builder().id(1L).email("niraj@gmail.com").password("123456").balance(3000.00).build();
+		accountModel accModel = new accountModel();
+		accModel.setEmail(user.getEmail());
+		accModel.setPassword("123456");
+		accModel.setBalance(user.getMonthlysal()-user.getMonthlyexp());
+
+		accRepo.save(accdummy);
+
+		org.junit.jupiter.api.Assertions.assertThrows(userException.class, () -> accService.createAccount(accModel,user.getEmail()));
+
+
+		verify(accRepo, never()).save(acc);
+
+	}
+
 
 	/**
 	 * JUnit Test to get all accounts in Account Service Layer.

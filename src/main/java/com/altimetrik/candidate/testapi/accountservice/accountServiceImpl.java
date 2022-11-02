@@ -15,6 +15,8 @@ import com.altimetrik.candidate.testapi.entity.userEntity;
 import com.altimetrik.candidate.testapi.exception.userException;
 import com.altimetrik.candidate.testapi.repository.userRepository;
 
+import javax.swing.text.html.Option;
+
 /**
  * Account Service Class to define Business logic methods implemented in the Interface accountService.
  */
@@ -30,8 +32,12 @@ public class accountServiceImpl implements accountService {
 	@Override
 	public accountEntity createAccount(accountModel amodel, String email) throws userException {
 		accountEntity accEntity = new accountEntity();
+		Optional<accountEntity> account_Found = accRepo.findByEmail(email);
 		Optional<userEntity> found = uRepo.findByEmail(email);
-		if(!amodel.getEmail().equals(email))
+		if(account_Found.isPresent()){
+			throw new userException(userException.AccountExists(email));
+		}
+		else if(!amodel.getEmail().equals(email))
 		{
 			throw new userException(userException.EmailMismatch(email));
 		}

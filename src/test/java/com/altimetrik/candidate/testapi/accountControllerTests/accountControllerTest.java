@@ -63,6 +63,7 @@ public class accountControllerTest {
 	@Test
 	public void saveAccountController() throws Exception
 	{
+
 		BeanUtils.copyProperties(accModel,account);
 		try {
 			given(accSer.createAccount(accModel, "niraj@gmail.com")).willReturn(account);

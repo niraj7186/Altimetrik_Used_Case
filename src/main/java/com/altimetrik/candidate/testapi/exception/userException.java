@@ -39,5 +39,9 @@ public class userException extends Exception {
 	{
 		return "Account can not be created as your balance $"+bal+" is less than $1000.00";
 	}
-	
+
+	public static String AccountExists(String email)
+	{
+		return "Account can not be created as account already exists for a user.";
+	}
 }

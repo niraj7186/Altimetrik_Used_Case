@@ -79,7 +79,7 @@ public class userServiceTest {
 	{
 		given(uRepo.findByEmail(user.getEmail())).willReturn(Optional.of(user));
 		
-		org.junit.jupiter.api.Assertions.assertThrows(userException.class, () -> {uSrer.saveUser(user);});
+		org.junit.jupiter.api.Assertions.assertThrows(userException.class, () -> uSrer.saveUser(user));
 		
 		verify(uRepo, never()).save(user);
 	}
@@ -151,7 +151,7 @@ public class userServiceTest {
 	{
 		given(uRepo.findByEmail(user.getEmail())).willReturn(Optional.empty());
 		
-		org.junit.jupiter.api.Assertions.assertThrows(userException.class, () -> {uSrer.getByEmail(user.getEmail());});
+		org.junit.jupiter.api.Assertions.assertThrows(userException.class, () -> uSrer.getByEmail(user.getEmail()));
 		
 	}
 
